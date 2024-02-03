@@ -9,6 +9,8 @@ import SP from "./Components/SP";
 import VH from "./Components/VH";
 import ET from "./Components/ET";
 
+import "./App.css";
+
 const App = () => {
 	return (
 		<Router>
