@@ -2,31 +2,49 @@ import React, { useEffect } from "react";
 
 const Leaderboard = () => {
 	useEffect(() => {
-		// Create container element
-		const container = document.createElement("div");
-		container.style.height = "85vh"; // Set container height to 50% of viewport height
-		container.style.overflow = "hidden"; // Hide overflow to display only the top half
+		// Create main container
+		const mainContainer = document.createElement("div");
+		mainContainer.style.border = "none";
+		mainContainer.style.height = "80vh"; // Set container height to 50% of viewport height
+		mainContainer.style.overflow = "hidden";
 
-		// Create script element
+		// Create widget container
+		const widgetContainer = document.createElement("div");
+
+		// Create script element for the widget
 		const script = document.createElement("script");
 		script.async = true;
 		script.type = "text/javascript";
 		script.src = "https://www.escapekit.co/lbwidget.js?lid=5zlc9w06&room=5544";
 
-		// Append script to container
-		container.appendChild(script);
+		// Append script to widget container
+		widgetContainer.appendChild(script);
 
-		// Append container to body
-		document.body.appendChild(container);
+		// Append widget container to main container
+		mainContainer.appendChild(widgetContainer);
+
+		// Append main container to body
+		document.body.appendChild(mainContainer);
 
 		const reloadIntervalId = setInterval(() => {
 			window.location.reload();
 		}, 60000); // 60 seconds
 
-		// Clear intervals and remove container from body
+		// Create header element
+		const header = document.createElement("h1");
+		header.textContent = "Escape Rate: 45%"; // Set your desired header text
+		header.style.color = "white";
+		header.style.backgroundColor = "#181818";
+		header.style.textAlign = "center";
+
+		// Append header to body
+		document.body.appendChild(header);
+
+		// Clear intervals and remove main container and header from body
 		return () => {
 			clearInterval(reloadIntervalId);
-			document.body.removeChild(container);
+			document.body.removeChild(mainContainer);
+			document.body.removeChild(header);
 		};
 	}, []);
 

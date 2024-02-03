@@ -6,7 +6,7 @@ const Home = () => {
 	};
 
 	return (
-		<div className="bg-dark text-white p-5" style={{ minHeight: "100vh" }}>
+		<div className="text-white p-5" style={{ minHeight: "100vh" }}>
 			<h1 className="d-flex justify-content-center">Select Game:</h1>
 			<div className="d-flex align-items-center flex-column">
 				<a href="/Blackbeard">
