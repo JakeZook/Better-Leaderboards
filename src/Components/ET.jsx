@@ -35,7 +35,7 @@ const Leaderboard = () => {
 		// Create header element
 		const header = document.createElement("h1");
 		header.textContent = "Escape Rate: 34.3%";
-		header.style.color = "white";
+		header.style.color = "#e79d1e";
 		header.style.backgroundColor = "#181818";
 		header.style.textAlign = "center";
 		header.style.paddingTop = "3vh";
