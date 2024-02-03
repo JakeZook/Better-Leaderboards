@@ -7,6 +7,7 @@ const Leaderboard = () => {
 		mainContainer.style.border = "none";
 		mainContainer.style.height = "80vh"; // Set container height to 50% of viewport height
 		mainContainer.style.overflow = "hidden";
+		mainContainer.style.marginTop = "5vh"; // Set top margin to 5% of viewport height
 
 		// Create widget container
 		const widgetContainer = document.createElement("div");
@@ -36,6 +37,8 @@ const Leaderboard = () => {
 		header.style.color = "white";
 		header.style.backgroundColor = "#181818";
 		header.style.textAlign = "center";
+		header.style.marginTop = "5vh"; // Set top margin to 5% of viewport height
+		header.style.fontSize = "5rem";
 
 		// Append header to body
 		document.body.appendChild(header);
