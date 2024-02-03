@@ -1,13 +1,14 @@
 import React, { useEffect } from "react";
 
+//ET 5544
 const Leaderboard = () => {
 	useEffect(() => {
-		// Create main container
+		//Create main container
 		const mainContainer = document.createElement("div");
 		mainContainer.style.border = "none";
-		mainContainer.style.height = "80vh"; // Set container height to 50% of viewport height
+		mainContainer.style.height = "80vh";
 		mainContainer.style.overflow = "hidden";
-		mainContainer.style.marginTop = "5vh"; // Set top margin to 5% of viewport height
+		mainContainer.style.marginTop = "5vh";
 
 		// Create widget container
 		const widgetContainer = document.createElement("div");
@@ -33,11 +34,11 @@ const Leaderboard = () => {
 
 		// Create header element
 		const header = document.createElement("h1");
-		header.textContent = "Escape Rate: 45%"; // Set your desired header text
+		header.textContent = "Escape Rate: 34.3%";
 		header.style.color = "white";
 		header.style.backgroundColor = "#181818";
 		header.style.textAlign = "center";
-		header.style.paddingTop = "3vh"; // Set top margin to 5% of viewport height
+		header.style.paddingTop = "3vh";
 		header.style.fontSize = "5rem";
 
 		// Append header to body
