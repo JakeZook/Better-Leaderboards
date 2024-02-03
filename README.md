@@ -1,9 +1,21 @@
-# React + Vite
+# EWD Better Leaderboards
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web app for EWD's Leaderboards that automatically pull in new data every minute.
 
-Currently, two official plugins are available:
+## Authors
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Better-Leaderboards
+- [@JakeZook](https://www.github.com/JakeZook)
+
+## Usage/Examples
+
+{LINK}
+
+Choose game from menu. Page will refresh every 60 seconds to pull in new stats from games.
+
+## Tech Stack
+
+**Client:** React, React-Router, Bootstrap
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
