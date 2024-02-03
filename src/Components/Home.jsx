@@ -1,5 +1,7 @@
 import React from "react";
 
+import Logo from "./logo";
+
 const Home = () => {
 	const buttonStyle = {
 		width: "200px",
@@ -7,6 +9,7 @@ const Home = () => {
 
 	return (
 		<div className="text-white p-5" style={{ minHeight: "100vh" }}>
+			<Logo />
 			<h1 className="d-flex justify-content-center">Select Game:</h1>
 			<div className="d-flex align-items-center flex-column">
 				<a href="/Blackbeard">
