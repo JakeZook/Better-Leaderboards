@@ -1,5 +1,6 @@
 * {
 	-ms-overflow-style: none;
+	background-color: #212529;
 }
 ::-webkit-scrollbar {
 	display: none;
