@@ -37,7 +37,7 @@ const Leaderboard = () => {
 		header.style.color = "white";
 		header.style.backgroundColor = "#181818";
 		header.style.textAlign = "center";
-		header.style.paddingTop = "5vh"; // Set top margin to 5% of viewport height
+		header.style.paddingTop = "3vh"; // Set top margin to 5% of viewport height
 		header.style.fontSize = "5rem";
 
 		// Append header to body
