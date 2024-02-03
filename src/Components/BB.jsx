@@ -1,23 +1,36 @@
 import React, { useEffect } from "react";
 
-//Blackbeard 5542
+//BB 5542
 const Leaderboard = () => {
 	useEffect(() => {
+		//Create script element
 		const script = document.createElement("script");
 		script.async = true;
 		script.type = "text/javascript";
 		script.src = "https://www.escapekit.co/lbwidget.js?lid=5zlc9w06&room=5542";
 
-		document.body.appendChild(script);
+		//Append script to body and reload after 60 seconds
+		const intervalId = setInterval(() => {
+			//Check if script has already been appended
+			if (document.readyState === "complete") {
+				clearInterval(intervalId);
 
-		const timeoutId = setTimeout(() => {
-			document.body.removeChild(script);
-			window.location.reload();
-		}, 60000); // 60 seconds
+				document.body.appendChild(script);
+
+				const reloadIntervalId = setInterval(() => {
+					window.location.reload();
+				}, 60000); // 60 seconds
+
+				//Clear intervals and remove script from body
+				return () => {
+					clearInterval(reloadIntervalId);
+					document.body.removeChild(script);
+				};
+			}
+		}, 100);
 
 		return () => {
-			clearTimeout(timeoutId);
-			document.body.removeChild(script);
+			clearInterval(intervalId);
 		};
 	}, []);
 };
