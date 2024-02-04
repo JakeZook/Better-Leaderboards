@@ -44,7 +44,7 @@ const Leaderboard = () => {
 		header.style.color = "white";
 		header.style.backgroundColor = "#181818";
 		header.style.textAlign = "center";
-		header.style.paddingTop = "4vh";
+		header.style.paddingTop = "3vh";
 		header.style.fontSize = "5rem";
 		header.style.display = "flex";
 		header.style.flexDirection = "column";
