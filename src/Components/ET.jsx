@@ -24,6 +24,7 @@ const Leaderboard = () => {
 		img.src = Image;
 		img.style.maxHeight = "8vh";
 		img.style.maxWidth = "26vh";
+		img.style.marginTop = "2vh";
 
 		// Append script to widget container
 		widgetContainer.appendChild(script);
