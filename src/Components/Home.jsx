@@ -1,6 +1,6 @@
 import React from "react";
 
-import Logo from "./logo";
+import Image from "/src/logo.png";
 
 const Home = () => {
 	const buttonStyle = {
@@ -8,8 +8,16 @@ const Home = () => {
 	};
 
 	return (
-		<div className="text-white p-5" style={{ minHeight: "100vh" }}>
-			<Logo />
+		<div
+			className="text-white p-5 d-flex flex-column align-items-center justify-content-center"
+			style={{ minHeight: "100vh" }}
+		>
+			<img
+				src={Image}
+				alt=""
+				className="img-fluid mx-auto"
+				style={{ maxHeight: "20vh" }}
+			/>
 			<h1 className="d-flex justify-content-center">Select Game:</h1>
 			<div className="d-flex align-items-center flex-column">
 				<a href="/Blackbeard">

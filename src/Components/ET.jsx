@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Image from "/src/logo.png";
 
 //ET 5544
 const Leaderboard = () => {
@@ -18,6 +19,11 @@ const Leaderboard = () => {
 		script.async = true;
 		script.type = "text/javascript";
 		script.src = "https://www.escapekit.co/lbwidget.js?lid=5zlc9w06&room=5544";
+
+		const img = document.createElement("img");
+		img.src = Image;
+		img.style.maxHeight = "10vh";
+		img.style.maxWidth = "30vh";
 
 		// Append script to widget container
 		widgetContainer.appendChild(script);
@@ -40,9 +46,13 @@ const Leaderboard = () => {
 		header.style.textAlign = "center";
 		header.style.paddingTop = "4vh";
 		header.style.fontSize = "5rem";
+		header.style.display = "flex";
+		header.style.flexDirection = "column";
+		header.style.alignItems = "center";
 
 		// Append header to body
 		document.body.appendChild(header);
+		header.appendChild(img);
 
 		// Clear intervals and remove main container and header from body
 		return () => {
