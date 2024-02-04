@@ -9,7 +9,7 @@ const Leaderboard = () => {
 		mainContainer.style.border = "none";
 		mainContainer.style.height = "80vh";
 		mainContainer.style.overflow = "hidden";
-		mainContainer.style.marginTop = "5vh";
+		mainContainer.style.marginTop = "3vh";
 
 		// Create widget container
 		const widgetContainer = document.createElement("div");
