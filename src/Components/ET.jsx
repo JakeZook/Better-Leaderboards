@@ -22,8 +22,8 @@ const Leaderboard = () => {
 
 		const img = document.createElement("img");
 		img.src = Image;
-		img.style.maxHeight = "10vh";
-		img.style.maxWidth = "30vh";
+		img.style.maxHeight = "8vh";
+		img.style.maxWidth = "26vh";
 
 		// Append script to widget container
 		widgetContainer.appendChild(script);
@@ -45,7 +45,7 @@ const Leaderboard = () => {
 		header.style.backgroundColor = "#181818";
 		header.style.textAlign = "center";
 		header.style.paddingTop = "2vh";
-		header.style.fontSize = "5rem";
+		header.style.fontSize = "3rem";
 		header.style.display = "flex";
 		header.style.flexDirection = "column";
 		header.style.alignItems = "center";
