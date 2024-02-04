@@ -20,6 +20,7 @@ const Leaderboard = () => {
 		script.type = "text/javascript";
 		script.src = "https://www.escapekit.co/lbwidget.js?lid=5zlc9w06&room=5546";
 
+		// Create image element for logo
 		const img = document.createElement("img");
 		img.src = Image;
 		img.style.maxHeight = "8vh";
@@ -41,7 +42,7 @@ const Leaderboard = () => {
 
 		// Create header element
 		const header = document.createElement("h1");
-		header.textContent = "Escape Rate: 34.3%";
+		header.textContent = "Escape Rate: 41.9%";
 		header.style.color = "white";
 		header.style.backgroundColor = "#181818";
 		header.style.textAlign = "center";
