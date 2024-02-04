@@ -49,7 +49,7 @@ const Leaderboard = () => {
 		header.style.marginBottom = "2vh";
 		header.style.fontSize = "3rem";
 		header.style.display = "flex";
-		header.style.flexDirection = "column-reverse";
+		header.style.flexDirection = "column";
 		header.style.alignItems = "center";
 
 		// Append header to body
