@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import Logo from "./logo";
 
 //ET 5544
 const Leaderboard = () => {
@@ -19,9 +18,6 @@ const Leaderboard = () => {
 		script.async = true;
 		script.type = "text/javascript";
 		script.src = "https://www.escapekit.co/lbwidget.js?lid=5zlc9w06&room=5544";
-
-		const Logo = document.createElement("img");
-		Logo.src = "/logo.png";
 
 		// Append script to widget container
 		widgetContainer.appendChild(script);
@@ -47,7 +43,6 @@ const Leaderboard = () => {
 
 		// Append header to body
 		document.body.appendChild(header);
-		header.appendChild(Logo);
 
 		// Clear intervals and remove main container and header from body
 		return () => {
