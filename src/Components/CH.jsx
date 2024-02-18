@@ -37,7 +37,7 @@ const Leaderboard = () => {
 
 		const reloadIntervalId = setInterval(() => {
 			window.location.reload();
-		}, 7200000); // 2 hours
+		}, 60000); // 60 seconds
 
 		// Create header element
 		const header = document.createElement("h1");
