@@ -40,11 +40,6 @@ const Home = () => {
 						Speakeasy
 					</button>
 				</a>
-				<a href="/Outbreak">
-					<button className="btn btn-danger m-2" style={buttonStyle}>
-						Outbreak
-					</button>
-				</a>
 				<a href="/Vampire">
 					<button className="btn btn-danger m-2" style={buttonStyle}>
 						Vampire
