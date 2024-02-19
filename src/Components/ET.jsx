@@ -21,7 +21,7 @@ const Leaderboard = () => {
 			<iframe
 				src={widgetLink}
 				title="Embedded Content"
-				style={{ width: "100%", height: "800px", border: "none" }}
+				style={{ width: "100%", height: "100vh", border: "none" }}
 			></iframe>
 		</div>
 	);
