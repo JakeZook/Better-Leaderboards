@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import Image from "/src/logo.png";
 
 const Leaderboard = () => {
 	const widgetLink =
@@ -21,8 +22,19 @@ const Leaderboard = () => {
 			<iframe
 				src={widgetLink}
 				title="Embedded Content"
-				style={{ width: "100%", height: "100vh", border: "none" }}
+				style={{ width: "100%", height: "80vh", border: "none" }}
 			></iframe>
+			<div
+				className="stats d-flex justify-content-center align-items-center flex-column"
+				style={{ width: "100%", height: "20vh" }}
+			>
+				<h2 className="text-white">Escape Rate: {escapeRate}</h2>
+				<img
+					src={Image}
+					alt="escapeworks logo"
+					style={{ width: "auto", height: "50%" }}
+				/>
+			</div>
 		</div>
 	);
 };
