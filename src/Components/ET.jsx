@@ -18,7 +18,7 @@ const Leaderboard = () => {
 	}, []);
 
 	return (
-		<div className="m-3">
+		<div className="mt-3">
 			<iframe
 				src={widgetLink}
 				title="Embedded Content"
@@ -34,7 +34,7 @@ const Leaderboard = () => {
 				<img
 					src={Image}
 					alt="escapeworks logo"
-					style={{ width: "auto", height: "30%" }}
+					style={{ width: "auto", height: "40%" }}
 				/>
 			</div>
 		</div>
