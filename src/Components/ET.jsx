@@ -18,7 +18,7 @@ const Leaderboard = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className="m-3">
 			<iframe
 				src={widgetLink}
 				title="Embedded Content"
@@ -28,11 +28,13 @@ const Leaderboard = () => {
 				className="stats d-flex justify-content-center align-items-center flex-column"
 				style={{ width: "100%", height: "20vh" }}
 			>
-				<h1 className="text-white">Escape Rate: {escapeRate}</h1>
+				<h1 className="text-white" style={{ fontSize: "58px" }}>
+					Escape Rate: {escapeRate}
+				</h1>
 				<img
 					src={Image}
 					alt="escapeworks logo"
-					style={{ width: "auto", height: "50%" }}
+					style={{ width: "auto", height: "30%" }}
 				/>
 			</div>
 		</div>
