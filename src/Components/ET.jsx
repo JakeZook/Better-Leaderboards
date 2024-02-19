@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import Image from "/src/logo.png";
 
-const Leaderboard = () => {
+const ET = () => {
 	const widgetLink =
 		"https://www.escapekit.co/5zlc9w06/leaderboards/1/?cache=false&room=5544";
 	const escapeRate = "34.3%";
@@ -41,4 +41,4 @@ const Leaderboard = () => {
 	);
 };
 
-export default Leaderboard;
+export default ET;

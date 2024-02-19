@@ -9,8 +9,6 @@ import SP from "./Components/SP";
 import VH from "./Components/VH";
 import ET from "./Components/ET";
 
-import Test from "./Components/test";
-
 import "./App.css";
 
 const App = () => {
@@ -24,7 +22,6 @@ const App = () => {
 				<Route path="/Speakeasy" element={<SP />} />
 				<Route path="/Vampire" element={<VH />} />
 				<Route path="/Egypt" element={<ET />} />
-				<Route path="/test" element={<Test />} />
 			</Routes>
 		</Router>
 	);
