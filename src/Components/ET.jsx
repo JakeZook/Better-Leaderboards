@@ -14,11 +14,10 @@ const Leaderboard = () => {
 		// Create widget container
 		const widgetContainer = document.createElement("div");
 
-		// Create script element for the widget
-		const script = document.createElement("script");
-		script.async = true;
-		script.type = "text/javascript";
-		script.src = "https://www.escapekit.co/lbwidget.js?lid=5zlc9w06&room=5544";
+		const widget = document.createElement("iframe");
+		widget.src =
+			"https://www.escapekit.co/5zlc9w06/leaderboards/1/?cache=false";
+		widget.style.width = "100%";
 
 		const img = document.createElement("img");
 		img.src = Image;
@@ -27,7 +26,7 @@ const Leaderboard = () => {
 		img.style.marginTop = "1vh";
 
 		// Append script to widget container
-		widgetContainer.appendChild(script);
+		widgetContainer.appendChild(widget);
 
 		// Append widget container to main container
 		mainContainer.appendChild(widgetContainer);
