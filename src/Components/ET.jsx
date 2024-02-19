@@ -22,7 +22,7 @@ const Leaderboard = () => {
 			<iframe
 				src={widgetLink}
 				title="Embedded Content"
-				style={{ width: "100%", height: "70vh", border: "none" }}
+				style={{ width: "100%", height: "75vh", border: "none" }}
 			></iframe>
 			<div
 				className="stats d-flex justify-content-center align-items-center flex-column"
