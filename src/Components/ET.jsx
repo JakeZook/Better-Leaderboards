@@ -28,7 +28,7 @@ const Leaderboard = () => {
 				className="stats d-flex justify-content-center align-items-center flex-column"
 				style={{ width: "100%", height: "20vh" }}
 			>
-				<h2 className="text-white">Escape Rate: {escapeRate}</h2>
+				<h1 className="text-white">Escape Rate: {escapeRate}</h1>
 				<img
 					src={Image}
 					alt="escapeworks logo"
