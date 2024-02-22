@@ -29,7 +29,7 @@ const VH = () => {
 				style={{ width: "100%", height: "20vh" }}
 			>
 				<h1 className="text-white mb-2" style={{ fontSize: "58px" }}>
-					Escape Rate: {escapeRate}
+					Coming soon!
 				</h1>
 				<img
 					src={Image}
