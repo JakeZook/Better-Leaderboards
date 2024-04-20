@@ -4,7 +4,7 @@ import Image from "/src/logo.png";
 const VH = () => {
 	const widgetLink =
 		"https://www.escapekit.co/5zlc9w06/leaderboards/1/?cache=false&room=6056";
-	const escapeRate = "31.3%";
+	const escapeRate = "TBD";
 
 	useEffect(() => {
 		const reloadIntervalId = setInterval(() => {
